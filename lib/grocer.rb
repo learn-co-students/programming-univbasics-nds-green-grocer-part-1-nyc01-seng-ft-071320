@@ -37,7 +37,6 @@ def consolidate_cart(cart)
     else
       element[:count] = 1
       results.push(element)
-      binding.pry
   end
 end
   return results
