@@ -1,17 +1,27 @@
+require 'pry'
 def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
 
+counter = 1 
+while counter < collection.length
+collection[counter][:item] == name
+end 
+return nil 
+ 
+
+counter += 1
 end
-
-def consolidate_cart(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This returns a new Array that represents the cart. Don't merely
-  # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-
-end
+ 
+# filtered_array = []
+#   cart.each do |item|
+#     target_item = find_item_by_name_in_collection(item[:item], filtered_array)
+#     if target_item
+#       target_item[:count] += 1
+#     else
+#       item[:count] = 1
+#       filtered_array << item
+#     end
+#   end
+#   return filtered_array
 
 
   
